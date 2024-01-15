@@ -1,6 +1,6 @@
 package main
 
-import "github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter1/filedirs"
+import "github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter01/filedirs"
 
 func main() {
 	if err := filedirs.Operate(); err != nil {

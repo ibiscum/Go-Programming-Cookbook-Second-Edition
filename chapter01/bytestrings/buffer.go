@@ -19,7 +19,7 @@ func Buffer(rawString string) *bytes.Buffer {
 	b.Write(rawBytes)
 
 	// alternatively
-	b = bytes.NewBuffer(rawBytes)
+	// b = bytes.NewBuffer(rawBytes)
 
 	// and avoiding the intial byte array altogether
 	b = bytes.NewBufferString(rawString)

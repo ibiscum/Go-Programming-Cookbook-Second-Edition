@@ -1,1 +1,7 @@
 go 1.21.5
+
+use (
+	./chapter01/bytestrings
+	./chapter01/csvformat
+	./chapter01/filedirs
+)

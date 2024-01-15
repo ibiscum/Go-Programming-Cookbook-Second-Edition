@@ -26,7 +26,7 @@ movie title;director;year released
 Guardians of the Galaxy Vol. 2;James Gunn;2017
 `),
 			},
-			want:    []Movie{Movie{"Guardians of the Galaxy Vol. 2", "James Gunn", 2017}},
+			want:    []Movie{{"Guardians of the Galaxy Vol. 2", "James Gunn", 2017}},
 			wantErr: false},
 	}
 
