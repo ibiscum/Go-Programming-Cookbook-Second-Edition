@@ -7,4 +7,5 @@ use (
     ./chapter01/interfaces
     ./chapter01/tempfiles
     ./chapter01/templates
+    ./chapter02/ansicolor
 )

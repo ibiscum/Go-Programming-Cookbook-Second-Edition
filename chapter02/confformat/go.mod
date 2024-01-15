@@ -1,4 +1,4 @@
-module github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter2/confformat
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter2/confformat
 
 require (
 	github.com/BurntSushi/toml v0.3.1
