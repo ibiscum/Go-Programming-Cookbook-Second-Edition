@@ -11,4 +11,7 @@ use (
     ./chapter02/cmdargs
     ./chapter02/confformat
     ./chapter02/envvar
+    ./chapter02/flags
+    ./chapter02/pipes
+    ./chapter02/signals
 )
