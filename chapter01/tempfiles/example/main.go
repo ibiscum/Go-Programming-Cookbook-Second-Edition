@@ -1,6 +1,6 @@
 package main
 
-import "github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter1/tempfiles"
+import "github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter01/tempfiles"
 
 func main() {
 	if err := tempfiles.WorkWithTemp(); err != nil {

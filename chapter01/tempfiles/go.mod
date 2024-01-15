@@ -1,3 +1,3 @@
-module github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter1/tempfiles
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter01/tempfiles
 
 go 1.12
