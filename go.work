@@ -14,4 +14,8 @@ use (
     ./chapter02/flags
     ./chapter02/pipes
     ./chapter02/signals
+    ./chapter03/collections
+    ./chapter03/currency
+    ./chapter03/dataconv
+    ./chapter03/encoding
 )

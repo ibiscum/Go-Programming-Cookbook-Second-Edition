@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter3/collections"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter03/collections"
 )
 
 func main() {
 	ws := []collections.WorkWith{
-		collections.WorkWith{"Example", 1},
-		collections.WorkWith{"Example 2", 2},
+		{"Example", 1},
+		{"Example 2", 2},
 	}
 
 	fmt.Printf("Initial list: %#v\n", ws)

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter3/currency"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter03/currency"
 )
 
 func main() {

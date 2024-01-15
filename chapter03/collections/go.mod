@@ -1,3 +1,3 @@
-module github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter3/collections
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter03/collections
 
 go 1.12

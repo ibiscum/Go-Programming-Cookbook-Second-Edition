@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter3/encoding"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter03/encoding"
 )
 
 func main() {

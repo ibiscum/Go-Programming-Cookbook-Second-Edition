@@ -6,7 +6,7 @@ import (
 )
 
 func TestFilter(t *testing.T) {
-	ws := []WorkWith{WorkWith{"test", 1}}
+	ws := []WorkWith{{"test", 1}}
 	type args struct {
 		ws []WorkWith
 		f  func(w WorkWith) bool
@@ -16,7 +16,7 @@ func TestFilter(t *testing.T) {
 		args args
 		want []WorkWith
 	}{
-		{"filter true", args{ws, func(w WorkWith) bool { return true }}, []WorkWith{WorkWith{"test", 1}}},
+		{"filter true", args{ws, func(w WorkWith) bool { return true }}, []WorkWith{{"test", 1}}},
 		{"filter false", args{ws, func(w WorkWith) bool { return false }}, []WorkWith{}},
 	}
 	for _, tt := range tests {
@@ -29,7 +29,7 @@ func TestFilter(t *testing.T) {
 }
 
 func TestMap(t *testing.T) {
-	ws := []WorkWith{WorkWith{"test", 1}}
+	ws := []WorkWith{{"test", 1}}
 	type args struct {
 		ws []WorkWith
 		f  func(w WorkWith) WorkWith
@@ -39,7 +39,7 @@ func TestMap(t *testing.T) {
 		args args
 		want []WorkWith
 	}{
-		{"base-case", args{ws, func(w WorkWith) WorkWith { return w }}, []WorkWith{WorkWith{"test", 1}}},
+		{"base-case", args{ws, func(w WorkWith) WorkWith { return w }}, []WorkWith{{"test", 1}}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
