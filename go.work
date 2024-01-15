@@ -8,4 +8,6 @@ use (
     ./chapter01/tempfiles
     ./chapter01/templates
     ./chapter02/ansicolor
+    ./chapter02/cmdargs
+    ./chapter02/confformat
 )
