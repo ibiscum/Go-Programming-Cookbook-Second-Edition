@@ -1,3 +1,3 @@
-module github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter1/templates
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter01/templates
 
 go 1.12

@@ -6,4 +6,5 @@ use (
 	./chapter01/filedirs
     ./chapter01/interfaces
     ./chapter01/tempfiles
+    ./chapter01/templates
 )
