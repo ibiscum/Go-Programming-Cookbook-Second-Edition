@@ -10,4 +10,5 @@ use (
     ./chapter02/ansicolor
     ./chapter02/cmdargs
     ./chapter02/confformat
+    ./chapter02/envvar
 )
