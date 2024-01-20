@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter7/async"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter07/async"
 )
 
 func main() {

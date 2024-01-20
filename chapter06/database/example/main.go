@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter6/database"
 	_ "github.com/go-sql-driver/mysql" //we import supported libraries for database/sql
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter06/database"
 )
 
 func main() {

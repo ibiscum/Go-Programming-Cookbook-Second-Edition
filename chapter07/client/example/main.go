@@ -1,6 +1,6 @@
 package main
 
-import "github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter7/client"
+import "github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter07/client"
 
 func main() {
 	// secure and op!

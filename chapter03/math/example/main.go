@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter3/math"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter3/math"
 )
 
 func main() {

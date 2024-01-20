@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter3/nulls"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter3/nulls"
 )
 
 func main() {
