@@ -1,4 +1,4 @@
-module github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter6/database
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter6/database
 
 go 1.12
 
