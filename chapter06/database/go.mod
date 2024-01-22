@@ -1,9 +1,8 @@
-module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter6/database
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter06/database
 
-go 1.12
+go 1.21.5
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.3.3
-	github.com/go-sql-driver/mysql v1.4.1
-	google.golang.org/appengine v1.5.0 // indirect
+	github.com/go-sql-driver/mysql v1.7.1
 )

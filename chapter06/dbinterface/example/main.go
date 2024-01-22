@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "github.com/go-sql-driver/mysql" //we import supported libraries for database/sql
+	//_ "github.com/go-sql-driver/mysql" //we import supported libraries for database/sql
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter06/database"
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter06/dbinterface"
 )
