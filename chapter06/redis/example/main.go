@@ -1,6 +1,6 @@
 package main
 
-import "github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter6/redis"
+import "github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter06/redis"
 
 func main() {
 	if err := redis.Exec(); err != nil {

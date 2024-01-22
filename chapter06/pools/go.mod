@@ -1,6 +1,5 @@
-module github.com/PacktPublishing/Go-Programming-Cookbook-Second-Edition/chapter6/pools
+module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter06/pools
 
-require (
-	github.com/go-sql-driver/mysql v1.4.1
-	google.golang.org/appengine v1.5.0 // indirect
-)
+go 1.21.5
+
+require github.com/go-sql-driver/mysql v1.7.1
