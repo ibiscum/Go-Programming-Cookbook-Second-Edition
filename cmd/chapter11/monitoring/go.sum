@@ -12,3 +12,5 @@ github.com/prometheus/common v0.0.0-20170427095455-13ba4ddd0caa h1:WBOqSBZzK9pqP
 github.com/prometheus/common v0.0.0-20170427095455-13ba4ddd0caa/go.mod h1:daVV7qP5qjZbuso7PdcryaAu0sAZbrN9i7WWcTMWvro=
 github.com/prometheus/procfs v0.0.0-20170424204552-6ac8c5d890d4 h1:Woa4Zb6SM25qHyHRquqDURnQifNsL6RKd9cbthZXlqM=
 github.com/prometheus/procfs v0.0.0-20170424204552-6ac8c5d890d4/go.mod h1:c3At6R/oaqEKCNdg8wHV1ftS6bRYblBhIjjI8uT2IGk=
+golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e h1:vcxGaoTs7kV8m5Np9uUNQin4BrLOthgV7252N8V+FwY=
+golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
