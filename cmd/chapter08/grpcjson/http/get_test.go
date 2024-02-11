@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/internal"
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/keyvalue"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/internal"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/keyvalue"
 )
 
 func TestController_GetHandler(t *testing.T) {

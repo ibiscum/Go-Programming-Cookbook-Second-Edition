@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter7/twirp/rpc/greeter"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter07/twirp/greeter"
 )
 
 func main() {

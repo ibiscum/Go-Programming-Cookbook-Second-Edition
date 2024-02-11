@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	sarama "github.com/Shopify/sarama"
+	sarama "github.com/IBM/sarama"
 )
 
 // KafkaController allows us to attach a producer

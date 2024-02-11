@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	sarama "github.com/Shopify/sarama"
+	sarama "github.com/IBM/sarama"
 )
 
 func main() {

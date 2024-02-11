@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	sarama "github.com/Shopify/sarama"
+	sarama "github.com/IBM/sarama"
 )
 
 func sendMessage(producer sarama.SyncProducer, value string) {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/internal"
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/keyvalue"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/cmd/chapter08/grpcjson/internal"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/keyvalue"
 	"google.golang.org/grpc"
 )
 

@@ -1,8 +1,8 @@
 package main
 
 import (
-	sarama "github.com/Shopify/sarama"
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter12/kafkaflow"
+	sarama "github.com/IBM/sarama"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter12/kafkaflow"
 	flow "github.com/trustmaster/goflow"
 )
 

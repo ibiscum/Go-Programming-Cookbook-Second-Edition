@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter7/twirp/rpc/greeter"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter07/twirp/greeter"
 )
 
 // Greeter implements the interface

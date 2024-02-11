@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	sarama "github.com/Shopify/sarama"
+	sarama "github.com/IBM/sarama"
 )
 
 // Process response grabs results and errors from a producer

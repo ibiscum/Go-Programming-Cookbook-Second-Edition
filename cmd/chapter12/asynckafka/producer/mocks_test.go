@@ -5,7 +5,7 @@ package main
 
 import (
 	gomock "github.com/golang/mock/gomock"
-	sarama_v1 "github.com/Shopify/sarama"
+	sarama_v1 "github.com/IBM/sarama"
 )
 
 // Mock of AsyncProducer interface

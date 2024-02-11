@@ -7,7 +7,7 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	sarama "github.com/Shopify/sarama"
+	sarama "github.com/IBM/sarama"
 )
 
 func TestKafkaController_Handler(t *testing.T) {

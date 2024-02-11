@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter7/grpc/greeter"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter07/grpc/greeter"
 	"golang.org/x/net/context"
 )
 

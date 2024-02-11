@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter7/twirp/rpc/greeter"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter07/twirp/greeter"
 	"golang.org/x/net/context"
 )
 
