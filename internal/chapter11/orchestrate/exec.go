@@ -4,8 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter11/orchestrate/vendor/go.mongodb.org/mongo-driver/bson"
-	//"github.com/mongodb/mongo-go-driver/bson"
+	"go.mongodb.org/mongo-driver/bson"
 )
 
 // State is our data model
