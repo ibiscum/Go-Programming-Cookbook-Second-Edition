@@ -89,6 +89,7 @@ require (
 	github.com/smartystreets/goconvey v1.8.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/trustmaster/goflow v0.0.0-20210928125717-b7d4fd465ab2 // indirect
+	github.com/twitchtv/twirp v8.1.3+incompatible // indirect
 	github.com/unrolled/render v1.6.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.51.0 // indirect
