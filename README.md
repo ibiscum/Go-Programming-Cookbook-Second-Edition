@@ -1,5 +1,5 @@
-
-
+[![CodeQL](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/github-code-scanning/codeql)
+[![build](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/build.yml/badge.svg)](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/build.yml)
 
 # Go Programming Cookbook - Second Edition 
 
@@ -50,6 +50,7 @@ Consul provides a robust Go API library. It can feel daunting when you're starti
 fast and efficient (https://www.consul.io/intro/getting-started/agent.html).
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-).
+
 ### Software and Hardware List
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
@@ -75,7 +76,6 @@ Aaron has published a number of papers and has several patents in the area of st
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
-
 
 ### Download a free PDF
 
