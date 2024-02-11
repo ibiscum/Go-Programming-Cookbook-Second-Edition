@@ -3,7 +3,7 @@ package storage
 import (
 	"context"
 
-	"github.com/mongodb/mongo-go-driver/bson"
+	"go.mongodb.org/mongo-driver/bson"
 )
 
 // GetByName queries mongodb for an item with
