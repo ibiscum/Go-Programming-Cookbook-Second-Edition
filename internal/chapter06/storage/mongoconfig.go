@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 // MongoStorage implements our storage interface
@@ -19,7 +20,7 @@ func NewMongoStorage(ctx context.Context, connection, db, collection string) (*M
 	ctx, cancel := context.WithTimeout(ctx, 10*time.Second)
 	defer cancel()
 
-	client, err := mongo.Connect(ctx, "mongodb://localhost")
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:6000"))
 	if err != nil {
 		return nil, err
 	}
