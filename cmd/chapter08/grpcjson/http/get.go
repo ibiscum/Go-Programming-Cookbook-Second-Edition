@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/apex/log"
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/keyvalue"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/keyvalue"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 )

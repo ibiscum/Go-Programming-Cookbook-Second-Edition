@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter04/basicerrors"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter04/basicerrors"
 )
 
 func main() {

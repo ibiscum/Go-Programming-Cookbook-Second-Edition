@@ -76,25 +76,25 @@ func TestCrawlError_Error(t *testing.T) {
 	}
 }
 
-func TestCrawlError_Valid(t *testing.T) {
-	type fields struct {
-		Errors []string
-	}
-	tests := []struct {
-		name   string
-		fields fields
-		want   bool
-	}{
-	// TODO: Add test cases.
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			c := &CrawlError{
-				Errors: tt.fields.Errors,
-			}
-			if got := c.Valid(); got != tt.want {
-				t.Errorf("CrawlError.Valid() = %v, want %v", got, tt.want)
-			}
-		})
-	}
-}
+// func TestCrawlError_Valid(t *testing.T) {
+// 	type fields struct {
+// 		Errors []string
+// 	}
+// 	tests := []struct {
+// 		name   string
+// 		fields fields
+// 		want   bool
+// 	}{
+// 	// TODO: Add test cases.
+// 	}
+// 	for _, tt := range tests {
+// 		t.Run(tt.name, func(t *testing.T) {
+// 			c := &CrawlError{
+// 				Errors: tt.fields.Errors,
+// 			}
+// 			if got := c.Valid(); got != tt.want {
+// 				t.Errorf("CrawlError.Valid() = %v, want %v", got, tt.want)
+// 			}
+// 		})
+// 	}
+// }

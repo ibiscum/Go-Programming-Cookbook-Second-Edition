@@ -18,7 +18,7 @@ func TestGetUsers(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if err := GetUsers(tt.args.client); (err != nil) != tt.wantErr {
+			if err := GetUser(tt.args.client); (err != nil) != tt.wantErr {
 				t.Errorf("GetUsers() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})

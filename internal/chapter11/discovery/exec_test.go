@@ -38,7 +38,7 @@ func TestExec(t *testing.T) {
 		{"base-case", args{
 			&MockClient{
 				MockService: func(service, tag string) ([]*api.ServiceEntry, *api.QueryMeta, error) {
-					return []*api.ServiceEntry{&api.ServiceEntry{}}, nil, nil
+					return []*api.ServiceEntry{{}}, nil, nil
 				},
 			},
 		}, false},

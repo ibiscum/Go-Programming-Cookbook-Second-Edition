@@ -1,14 +1,13 @@
 package main
 
 import (
-	"io/ioutil"
 	"os"
 	"reflect"
 	"testing"
 )
 
 func TestWordCount(t *testing.T) {
-	f1, err := ioutil.TempFile(".", "tmp")
+	f1, err := os.CreateTemp("", "tmp")
 	if err != nil {
 		t.Error(err)
 	}

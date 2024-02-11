@@ -16,19 +16,19 @@ func main() {
 
 	go state.Processor(ctx, in, out)
 
-	req := state.WorkRequest{state.Add, 3, 4}
+	req := state.WorkRequest{Operation: state.Add, Value1: 3, Value2: 4}
 	in <- &req
 
-	req2 := state.WorkRequest{state.Subtract, 5, 2}
+	req2 := state.WorkRequest{Operation: state.Subtract, Value1: 5, Value2: 2}
 	in <- &req2
 
-	req3 := state.WorkRequest{state.Multiply, 9, 9}
+	req3 := state.WorkRequest{Operation: state.Multiply, Value1: 9, Value2: 9}
 	in <- &req3
 
-	req4 := state.WorkRequest{state.Divide, 8, 2}
+	req4 := state.WorkRequest{Operation: state.Divide, Value1: 8, Value2: 2}
 	in <- &req4
 
-	req5 := state.WorkRequest{state.Divide, 8, 0}
+	req5 := state.WorkRequest{Operation: state.Divide, Value1: 8, Value2: 0}
 	in <- &req5
 
 	for i := 0; i < 5; i++ {

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/internal"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/kvintern"
 )
 
 func main() {
-	c := Controller{KeyValue: internal.NewKeyValue()}
+	c := Controller{KeyValue: kvintern.NewKeyValue()}
 	http.HandleFunc("/set", c.SetHandler)
 	http.HandleFunc("/get", c.GetHandler)
 

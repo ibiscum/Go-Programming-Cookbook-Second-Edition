@@ -5,13 +5,13 @@ import (
 	"net/http"
 
 	"github.com/apex/log"
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/internal"
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter8/grpcjson/keyvalue"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/keyvalue"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/kvintern"
 )
 
 // Controller holds an internal KeyValueObject
 type Controller struct {
-	*internal.KeyValue
+	*kvintern.KeyValue
 }
 
 // SetHandler wraps or GRPC Set

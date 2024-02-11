@@ -6,12 +6,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/internal"
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/keyvalue"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter08/grpcjson/kvintern"
 )
 
 func TestController_GetHandler(t *testing.T) {
-	k := internal.NewKeyValue()
+	k := kvintern.NewKeyValue()
 	k.Set(context.Background(), &keyvalue.SetKeyValueRequest{Key: "test", Value: "value"})
 	type args struct {
 		w http.ResponseWriter
@@ -22,7 +22,7 @@ func TestController_GetHandler(t *testing.T) {
 		c    *Controller
 		args args
 	}{
-		{"no key", &Controller{KeyValue: internal.NewKeyValue()}, args{httptest.NewRecorder(), httptest.NewRequest("GET", "/?key=test", nil)}},
+		{"no key", &Controller{KeyValue: kvintern.NewKeyValue()}, args{httptest.NewRecorder(), httptest.NewRequest("GET", "/?key=test", nil)}},
 		{"key", &Controller{KeyValue: k}, args{httptest.NewRecorder(), httptest.NewRequest("GET", "/?key=test", nil)}},
 	}
 	for _, tt := range tests {

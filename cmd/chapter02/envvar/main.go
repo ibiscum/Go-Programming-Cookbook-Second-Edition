@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
 	"os"
 
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter02/envvar"
@@ -22,7 +21,7 @@ func main() {
 
 	// create a temporary file to hold
 	// an example json file
-	tf, err := ioutil.TempFile("", "tmp")
+	tf, err := os.CreateTemp("", "tmp")
 	if err != nil {
 		panic(err)
 	}
@@ -62,5 +61,4 @@ func main() {
 	// The final config is a mix of json and environment
 	// variables
 	fmt.Printf("Final Config: %#v\n", c)
-
 }

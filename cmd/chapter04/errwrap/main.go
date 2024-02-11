@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter4/errwrap"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter04/errwrap"
 )
 
 func main() {

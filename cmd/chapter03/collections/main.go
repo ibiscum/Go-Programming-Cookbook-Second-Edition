@@ -8,8 +8,8 @@ import (
 
 func main() {
 	ws := []collections.WorkWith{
-		{"Example", 1},
-		{"Example 2", 2},
+		{Data: "Example", Version: 1},
+		{Data: "Example 2", Version: 2},
 	}
 
 	fmt.Printf("Initial list: %#v\n", ws)
