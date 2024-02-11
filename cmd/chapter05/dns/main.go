@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter05/dns"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter05/dns"
 )
 
 func main() {

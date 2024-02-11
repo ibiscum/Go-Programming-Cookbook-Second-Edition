@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/rpc"
 
-	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter5/rpc/tweak"
+	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/internal/chapter05/tweak"
 )
 
 func main() {
