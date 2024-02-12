@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	consumer, err := sarama.NewConsumer([]string{"localhost:9092"}, nil)
+	consumer, err := sarama.NewConsumer([]string{"localhost:9094"}, nil)
 	if err != nil {
 		panic(err)
 	}

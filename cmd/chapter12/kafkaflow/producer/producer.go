@@ -14,11 +14,11 @@ func sendMessage(producer sarama.SyncProducer, value string) {
 		log.Printf("FAILED to send message: %s\n", err)
 		return
 	}
-	log.Printf("> message sent to partition %d at offset %d\n", partition, offset)
+	log.Printf("> message \"%s\" sent to partition %d at offset %d\n", msg.Value, partition, offset)
 }
 
 func main() {
-	producer, err := sarama.NewSyncProducer([]string{"localhost:9092"}, nil)
+	producer, err := sarama.NewSyncProducer([]string{"localhost:9094"}, nil)
 	if err != nil {
 		panic(err)
 	}

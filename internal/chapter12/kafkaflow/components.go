@@ -7,8 +7,7 @@ import (
 	flow "github.com/trustmaster/goflow"
 )
 
-// Upper upper cases the incoming
-// stream
+// Struct for upper cases of the incoming stream
 type Upper struct {
 	Val <-chan string
 	Res chan<- string
