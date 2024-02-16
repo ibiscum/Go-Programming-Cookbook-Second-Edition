@@ -10,7 +10,7 @@ import (
 
 func main() {
 	grpcServer := grpc.NewServer()
-	greeter.RegisterGreeterServiceServer(grpcServer, &Greeter{Exclaim: true})
+	greeter.RegisterGreeterServiceServer(grpcServer, &server{})
 	lis, err := net.Listen("tcp", ":4444")
 	if err != nil {
 		panic(err)

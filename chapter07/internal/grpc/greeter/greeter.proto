@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package greeter;
+
 option go_package = "github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter07/internal/grpc/greeter";
 
 service GreeterService{

@@ -28,16 +28,16 @@ func TestGreeter_Greet(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			g := &Greeter{
+			g := &server{
 				Exclaim: tt.fields.Exclaim,
 			}
 			got, err := g.Greet(tt.args.ctx, tt.args.r)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("Greeter.Greet() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("server.Greet() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("Greeter.Greet() = %v, want %v", got, tt.want)
+				t.Errorf("server.Greet() = %v, want %v", got, tt.want)
 			}
 		})
 	}
