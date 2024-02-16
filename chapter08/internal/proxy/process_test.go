@@ -2,7 +2,8 @@ package proxy
 
 import (
 	"bytes"
-	"io/ioutil"
+	"crypto/tls"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -40,15 +41,38 @@ func TestProxy_ProcessRequest(t *testing.T) {
 func TestCopyResponse(t *testing.T) {
 	header := make(http.Header)
 	header.Add("test", "value")
+
 	type args struct {
 		w    http.ResponseWriter
 		resp *http.Response
 	}
+
 	tests := []struct {
 		name string
 		args args
 	}{
-		{"base-case", args{httptest.NewRecorder(), &http.Response{Header: header, Body: ioutil.NopCloser(bytes.NewBufferString("test"))}}},
+		{
+			"base-case",
+			args{
+				httptest.NewRecorder(),
+				&http.Response{
+					Status:           "200 OK",
+					StatusCode:       200,
+					Proto:            "",
+					ProtoMajor:       0,
+					ProtoMinor:       0,
+					Header:           header,
+					Body:             io.NopCloser(bytes.NewBufferString("test")),
+					ContentLength:    0,
+					TransferEncoding: []string{},
+					Close:            false,
+					Uncompressed:     false,
+					Trailer:          map[string][]string{},
+					Request:          &http.Request{},
+					TLS:              &tls.ConnectionState{},
+				},
+			},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -3,6 +3,7 @@ package bytestrings
 import (
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"strings"
 )
@@ -50,5 +51,8 @@ func StringReader() {
 	r := strings.NewReader(s)
 
 	// prints s on Stdout
-	io.Copy(os.Stdout, r)
+	_, err := io.Copy(os.Stdout, r)
+	if err != nil {
+		log.Fatal(err)
+	}
 }

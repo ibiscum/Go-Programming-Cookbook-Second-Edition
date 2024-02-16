@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"os"
 	"reflect"
 	"testing"
@@ -14,8 +15,14 @@ func TestWordCount(t *testing.T) {
 	defer f1.Close()
 	defer os.Remove(f1.Name())
 
-	f1.Write([]byte("test case"))
-	f1.Seek(0, 0)
+	_, err = f1.Write([]byte("test case"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	_, err = f1.Seek(0, 0)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	type args struct {
 		f *os.File

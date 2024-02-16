@@ -3,6 +3,7 @@ package filedirs
 import (
 	"errors"
 	"io"
+	"log"
 	"os"
 )
 
@@ -50,7 +51,10 @@ func Operate() error {
 		return err
 	}
 
-	io.Copy(os.Stdout, f)
+	_, err = io.Copy(os.Stdout, f)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	if err := f.Close(); err != nil {
 		return err

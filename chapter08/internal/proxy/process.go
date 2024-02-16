@@ -2,6 +2,7 @@ package proxy
 
 import (
 	"bytes"
+	"log"
 	"net/http"
 	"net/url"
 )
@@ -34,5 +35,8 @@ func CopyResponse(w http.ResponseWriter, resp *http.Response) {
 	}
 
 	w.WriteHeader(resp.StatusCode)
-	w.Write(out.Bytes())
+	_, err := w.Write(out.Bytes())
+	if err != nil {
+		log.Fatal(err)
+	}
 }

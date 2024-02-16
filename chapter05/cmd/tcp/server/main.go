@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"net"
 	"strings"
 )
@@ -21,7 +22,10 @@ func echoBackCapitalized(conn net.Conn) {
 	}
 	// print then send back the data
 	fmt.Printf("Received: %s", data)
-	conn.Write([]byte(strings.ToUpper(data)))
+	_, err = conn.Write([]byte(strings.ToUpper(data)))
+	if err != nil {
+		log.Fatal(err)
+	}
 	// close up the finished connection
 	conn.Close()
 }
