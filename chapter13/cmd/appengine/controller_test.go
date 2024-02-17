@@ -12,6 +12,9 @@ import (
 )
 
 func TestController_handle(t *testing.T) {
+	if os.Getenv("TEST_NO_CI") != "" {
+		t.Skip("Skipping test in CI")
+	}
 	projectID := os.Getenv("GCLOUD_DATASET_ID")
 	cli, err := datastore.NewClient(context.Background(), projectID)
 	if err != nil {

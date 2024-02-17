@@ -11,7 +11,7 @@ services:
     volumes:
       - "kafka_data:/bitnami"
     environment:
-      # KRaft settings
+      # Kraft settings
       - KAFKA_ENABLE_KRAFT=true
       - KAFKA_CFG_NODE_ID=0
       - KAFKA_CFG_PROCESS_ROLES=controller,broker

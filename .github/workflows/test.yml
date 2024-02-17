@@ -8,6 +8,8 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+env: 
+  TEST_NO_CI: true
 
 jobs:
   test:
@@ -19,7 +21,7 @@ jobs:
       uses: actions/setup-go@v5
       with:
         go-version: '1.20'
-
+    
     - name: Redis Server in GitHub Actions
       uses: supercharge/redis-github-action@1.8.0
       with:
