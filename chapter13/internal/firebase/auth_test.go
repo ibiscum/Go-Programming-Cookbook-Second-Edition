@@ -7,8 +7,8 @@ import (
 )
 
 func TestAuthenticate(t *testing.T) {
-	if os.Getenv("TEST_WIP") != "" {
-		t.Skip("Skipping not finished test")
+	if os.Getenv("TEST_NO_CI") != "" {
+		t.Skip("Skipping not testing in CI")
 	}
 	type args struct {
 		ctx        context.Context
