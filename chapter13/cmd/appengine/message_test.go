@@ -9,8 +9,8 @@ import (
 )
 
 func TestController_storeMessage(t *testing.T) {
-	if os.Getenv("TEST_WIP") != "" {
-		t.Skip("Skipping not finished test")
+	if os.Getenv("TEST_NO_CI") != "" {
+		t.Skip("Skipping testing in CI")
 	}
 	projectID := os.Getenv("GCLOUD_DATASET_ID")
 	cli, err := datastore.NewClient(context.Background(), projectID)
@@ -46,6 +46,9 @@ func TestController_storeMessage(t *testing.T) {
 }
 
 func TestController_queryMessages(t *testing.T) {
+	if os.Getenv("TEST_NO_CI") != "" {
+		t.Skip("Skipping testing in CI")
+	}
 	projectID := os.Getenv("GCLOUD_DATASET_ID")
 	cli, err := datastore.NewClient(context.Background(), projectID)
 	if err != nil {
