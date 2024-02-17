@@ -2,10 +2,14 @@ package firebase
 
 import (
 	"context"
+	"os"
 	"testing"
 )
 
 func TestAuthenticate(t *testing.T) {
+	if os.Getenv("TEST_WIP") != "" {
+		t.Skip("Skipping not finished test")
+	}
 	type args struct {
 		ctx        context.Context
 		collection string
