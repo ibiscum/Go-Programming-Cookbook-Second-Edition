@@ -9,11 +9,21 @@ func NewEncodingApp() *goflow.Graph {
 	e := goflow.NewGraph()
 
 	// define component types
-	e.Add("encoder", new(Encoder))
-	e.Add("printer", new(Printer))
+	err := e.Add("encoder", new(Encoder))
+	if err != nil {
+		panic(err)
+	}
+
+	err = e.Add("printer", new(Printer))
+	if err != nil {
+		panic(err)
+	}
 
 	// connect the components using channels
-	e.Connect("encoder", "Res", "printer", "Line")
+	err = e.Connect("encoder", "Res", "printer", "Line")
+	if err != nil {
+		panic(err)
+	}
 
 	// map the in channel to Val, which is
 	// tied to OnVal function

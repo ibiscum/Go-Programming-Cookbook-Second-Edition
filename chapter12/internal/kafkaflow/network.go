@@ -6,10 +6,21 @@ import "github.com/trustmaster/goflow"
 func NewUpperApp() *goflow.Graph {
 	u := goflow.NewGraph()
 
-	u.Add("upper", new(Upper))
-	u.Add("printer", new(Printer))
+	err := u.Add("upper", new(Upper))
+	if err != nil {
+		panic(err)
+	}
 
-	u.Connect("upper", "Res", "printer", "Line")
+	err = u.Add("printer", new(Printer))
+	if err != nil {
+		panic(err)
+	}
+
+	err = u.Connect("upper", "Res", "printer", "Line")
+	if err != nil {
+		panic(err)
+	}
+
 	u.MapInPort("In", "upper", "Val")
 
 	return u

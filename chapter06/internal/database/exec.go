@@ -10,9 +10,8 @@ import (
 // creates tables, and later drops them
 // and issues some queries
 func Exec(db *sql.DB) error {
-	// uncaught error on cleanup, but we always
-	// want to cleanup
-	defer db.Exec("DROP TABLE example")
+	// uncaught error on cleanup, but we always want to cleanup
+	defer db.Exec("DROP TABLE example") //lint:ignore EXC0001 ignore this!
 
 	if err := Create(db); err != nil {
 		return err
