@@ -11,8 +11,7 @@ import (
 // and issues some queries
 func Exec(db *sql.DB) error {
 	// uncaught error on cleanup, but we always want to cleanup
-	//lint:ignore EXC0001 ignore this!
-	defer db.Exec("DROP TABLE example")
+	defer db.Exec("DROP TABLE example") //nolint
 
 	if err := Create(db); err != nil {
 		return err
