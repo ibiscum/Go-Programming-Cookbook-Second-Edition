@@ -44,7 +44,7 @@ func ReadCSV(b io.Reader) ([]Movie, error) {
 			return nil, err
 		}
 
-		year, err := strconv.ParseInt(record[2], 10, 64)
+		year, err := strconv.ParseUint(record[2], 10, 32)
 		if err != nil {
 			return nil, err
 		}
