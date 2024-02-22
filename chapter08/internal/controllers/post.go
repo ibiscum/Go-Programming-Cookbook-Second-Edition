@@ -20,7 +20,10 @@ func (c *Controller) SetValue(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	p := Payload{Value: value}
 	if payload, err := json.Marshal(p); err == nil {
-		w.Write(payload)
+		_, err := w.Write(payload)
+		if err != nil {
+			panic(err)
+		}
 	} else if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 	}

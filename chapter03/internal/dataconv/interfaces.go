@@ -22,8 +22,7 @@ func Interfaces() {
 	CheckType(1)
 	CheckType(false)
 
-	var i interface{}
-	i = "test"
+	var i interface{} = "test"
 
 	// manually check an interface
 	if val, ok := i.(string); ok {

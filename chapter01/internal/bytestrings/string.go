@@ -6,6 +6,9 @@ import (
 	"log"
 	"os"
 	"strings"
+
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 // SearchString shows a number of methods
@@ -35,8 +38,8 @@ func ModifyString() {
 	// prints [simple string]
 	fmt.Println(strings.Split(s, " "))
 
-	// prints "Simple String"
-	fmt.Println(strings.Title(s))
+	// prints "Simple String
+	fmt.Println(cases.Title(language.Und).String(s))
 
 	// prints "simple string"; all trailing and
 	// leading white space is removed

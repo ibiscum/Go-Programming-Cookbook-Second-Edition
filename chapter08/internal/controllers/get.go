@@ -22,7 +22,10 @@ func (c *Controller) GetValue(UseDefault bool) http.HandlerFunc {
 		p := Payload{Value: value}
 		w.WriteHeader(http.StatusOK)
 		if payload, err := json.Marshal(p); err == nil {
-			w.Write(payload)
+			_, err := w.Write(payload)
+			if err != nil {
+				panic(err)
+			}
 		}
 	}
 }
