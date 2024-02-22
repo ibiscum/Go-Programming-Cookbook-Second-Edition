@@ -2,12 +2,11 @@ package proxy
 
 import (
 	"bytes"
-	"log"
 	"net/http"
 	"net/url"
 )
 
-// ProcessRequest modifies the request in accordnance
+// ProcessRequest modifies the request in accordance
 // with Proxy settings
 func (p *Proxy) ProcessRequest(r *http.Request) error {
 	proxyURLRaw := p.BaseURL + r.URL.String()
@@ -26,7 +25,10 @@ func (p *Proxy) ProcessRequest(r *http.Request) error {
 // to the ResponseWriter in the original handler
 func CopyResponse(w http.ResponseWriter, resp *http.Response) {
 	var out bytes.Buffer
-	out.ReadFrom(resp.Body)
+	_, err := out.ReadFrom(resp.Body)
+	if err != nil {
+		panic(err)
+	}
 
 	for key, values := range resp.Header {
 		for _, value := range values {
@@ -35,8 +37,8 @@ func CopyResponse(w http.ResponseWriter, resp *http.Response) {
 	}
 
 	w.WriteHeader(resp.StatusCode)
-	_, err := w.Write(out.Bytes())
+	_, err = w.Write(out.Bytes())
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
 }

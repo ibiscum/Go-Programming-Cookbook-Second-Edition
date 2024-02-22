@@ -1,20 +1,19 @@
 package filedirs
 
 import (
-	"io/ioutil"
 	"os"
 	"testing"
 )
 
 func TestCapitalizer(t *testing.T) {
-	f1, err := ioutil.TempFile(".", "tmp")
+	f1, err := os.CreateTemp(".", "tmp")
 	if err != nil {
 		t.Error(err)
 	}
 	defer f1.Close()
 	defer os.Remove(f1.Name())
 
-	f2, err := ioutil.TempFile(".", "tmp")
+	f2, err := os.CreateTemp(".", "tmp")
 	if err != nil {
 		t.Error(err)
 	}
@@ -25,6 +24,7 @@ func TestCapitalizer(t *testing.T) {
 		f1 *os.File
 		f2 *os.File
 	}
+
 	tests := []struct {
 		name    string
 		args    args
@@ -36,6 +36,7 @@ func TestCapitalizer(t *testing.T) {
 			wantErr: false,
 		},
 	}
+
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if err := Capitalizer(tt.args.f1, tt.args.f2); (err != nil) != tt.wantErr {

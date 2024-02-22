@@ -15,8 +15,6 @@ func Exec() {
 	ctx := context.Background()
 	ctx = Setup(ctx)
 
-	rand.Seed(time.Now().UnixNano())
-
 	timeoutCtx, cancel := context.WithTimeout(ctx, (time.Duration(rand.Intn(2)) * time.Millisecond))
 	defer cancel()
 

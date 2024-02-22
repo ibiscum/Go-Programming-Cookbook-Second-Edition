@@ -5,8 +5,8 @@ import (
 
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter08/internal/grpcjson/keyvalue"
 	"golang.org/x/net/context"
-	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 // KeyValue is a struct that holds a map
@@ -37,7 +37,7 @@ func (k *KeyValue) Get(ctx context.Context, r *keyvalue.GetKeyValueRequest) (*ke
 	defer k.mutex.RUnlock()
 	val, ok := k.m[r.GetKey()]
 	if !ok {
-		return nil, grpc.Errorf(codes.NotFound, "key not set")
+		return nil, status.Errorf(codes.NotFound, "key not set")
 	}
 	return &keyvalue.KeyValueResponse{Value: val}, nil
 }

@@ -27,11 +27,17 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 		if newState != state {
 			w.WriteHeader(http.StatusBadRequest)
-			w.Write([]byte("invalid transition"))
+			_, err := w.Write([]byte("invalid transition"))
+			if err != nil {
+				panic(err)
+			}
 			return
 		}
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(newState))
+		_, err := w.Write([]byte(newState))
+		if err != nil {
+			panic(err)
+		}
 		return
 	}
 }

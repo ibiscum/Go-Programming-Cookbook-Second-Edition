@@ -22,7 +22,10 @@ func main() {
 	net := kafkaflow.NewUpperApp()
 
 	in := make(chan string)
-	net.SetInPort("In", in)
+	err = net.SetInPort("In", in)
+	if err != nil {
+		panic(err)
+	}
 
 	wait := flow.Run(net)
 	defer func() {

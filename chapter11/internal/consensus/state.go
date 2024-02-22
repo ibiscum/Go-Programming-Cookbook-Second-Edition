@@ -4,8 +4,8 @@ type state string
 
 const (
 	first  state = "first"
-	second       = "second"
-	third        = "third"
+	second state = "second"
+	third  state = "third"
 )
 
 var allowedState map[state][]state
