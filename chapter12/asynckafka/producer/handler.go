@@ -23,7 +23,10 @@ func (c *KafkaController) Handler(w http.ResponseWriter, r *http.Request) {
 	msg := r.FormValue("msg")
 	if msg == "" {
 		w.WriteHeader(http.StatusBadRequest)
-		w.Write([]byte("msg must be set"))
+		_, err := w.Write([]byte("msg must be set"))
+		if err != nil {
+			panic(err)
+		}
 		return
 	}
 	c.producer.Input() <- &sarama.ProducerMessage{Topic: "example", Key: nil, Value: sarama.StringEncoder(msg)}

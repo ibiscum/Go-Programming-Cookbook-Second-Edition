@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/base64"
 	"fmt"
-	"io/ioutil"
+	"io"
 )
 
 // Base64Example demonstrates using
@@ -49,7 +49,7 @@ func Base64ExampleEncoder() error {
 	fmt.Println("Using encoder and StdEncoding: ", buffer.String())
 
 	decoder := base64.NewDecoder(base64.StdEncoding, &buffer)
-	results, err := ioutil.ReadAll(decoder)
+	results, err := io.ReadAll(decoder)
 	if err != nil {
 		return err
 	}

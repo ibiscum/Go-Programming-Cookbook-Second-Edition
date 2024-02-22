@@ -13,7 +13,10 @@ func CounterHandler(w http.ResponseWriter, r *http.Request) {
 	c.Inc(1)
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("success"))
+	_, err := w.Write([]byte("success"))
+	if err != nil {
+		panic(err)
+	}
 }
 
 // TimerHandler records the duration required to compelete
@@ -22,6 +25,9 @@ func TimerHandler(w http.ResponseWriter, r *http.Request) {
 	t := metrics.GetOrRegisterTimer("timerhandler.timer", nil)
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("success"))
+	_, err := w.Write([]byte("success"))
+	if err != nil {
+		panic(err)
+	}
 	t.UpdateSince(currt)
 }

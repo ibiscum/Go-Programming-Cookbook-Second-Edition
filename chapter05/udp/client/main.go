@@ -22,12 +22,12 @@ func main() {
 	defer conn.Close()
 
 	msg := make([]byte, 512)
-	n, err := conn.Write([]byte("connected"))
+	_, err = conn.Write([]byte("connected"))
 	if err != nil {
 		panic(err)
 	}
 	for {
-		n, err = conn.Read(msg)
+		n, err := conn.Read(msg)
 		if err != nil {
 			continue
 		}
