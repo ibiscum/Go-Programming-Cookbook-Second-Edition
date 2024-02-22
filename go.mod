@@ -32,7 +32,7 @@ require (
 	github.com/twitchtv/twirp v8.1.3+incompatible
 	github.com/unrolled/render v1.6.1
 	github.com/valyala/fasthttp v1.51.0
-	go.mongodb.org/mongo-driver v1.13.1
+	go.mongodb.org/mongo-driver v1.14.0
 	golang.org/x/crypto v0.19.0
 	golang.org/x/net v0.21.0
 	golang.org/x/oauth2 v0.17.0
