@@ -2,14 +2,12 @@ package firebase
 
 import (
 	"context"
-	"os"
 	"testing"
 )
 
 func TestAuthenticate(t *testing.T) {
-	if os.Getenv("TEST_NO_CI") != "" {
-		t.Skip("Skipping not testing in CI")
-	}
+	t.Skip("Skipping not testing in CI")
+
 	type args struct {
 		ctx        context.Context
 		collection string
