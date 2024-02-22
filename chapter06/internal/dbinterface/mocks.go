@@ -32,9 +32,8 @@ func (_m *MockDB) EXPECT() *_MockDBRecorder {
 
 func (_m *MockDB) Exec(_param0 string, _param1 ...interface{}) (sql.Result, error) {
 	_s := []interface{}{_param0}
-	for _, _x := range _param1 {
-		_s = append(_s, _x)
-	}
+	_s = append(_s, _param1...)
+	
 	ret := _m.ctrl.Call(_m, "Exec", _s...)
 	ret0, _ := ret[0].(sql.Result)
 	ret1, _ := ret[1].(error)
@@ -59,9 +58,8 @@ func (_mr *_MockDBRecorder) Prepare(arg0 interface{}) *gomock.Call {
 
 func (_m *MockDB) Query(_param0 string, _param1 ...interface{}) (*sql.Rows, error) {
 	_s := []interface{}{_param0}
-	for _, _x := range _param1 {
-		_s = append(_s, _x)
-	}
+	_s = append(_s, _param1...)
+	
 	ret := _m.ctrl.Call(_m, "Query", _s...)
 	ret0, _ := ret[0].(*sql.Rows)
 	ret1, _ := ret[1].(error)
@@ -75,9 +73,8 @@ func (_mr *_MockDBRecorder) Query(arg0 interface{}, arg1 ...interface{}) *gomock
 
 func (_m *MockDB) QueryRow(_param0 string, _param1 ...interface{}) *sql.Row {
 	_s := []interface{}{_param0}
-	for _, _x := range _param1 {
-		_s = append(_s, _x)
-	}
+	_s = append(_s, _param1...)
+	
 	ret := _m.ctrl.Call(_m, "QueryRow", _s...)
 	ret0, _ := ret[0].(*sql.Row)
 	return ret0
@@ -121,9 +118,8 @@ func (_mr *_MockTransactionRecorder) Commit() *gomock.Call {
 
 func (_m *MockTransaction) Exec(_param0 string, _param1 ...interface{}) (sql.Result, error) {
 	_s := []interface{}{_param0}
-	for _, _x := range _param1 {
-		_s = append(_s, _x)
-	}
+	_s = append(_s, _param1...)
+	
 	ret := _m.ctrl.Call(_m, "Exec", _s...)
 	ret0, _ := ret[0].(sql.Result)
 	ret1, _ := ret[1].(error)
@@ -148,9 +144,8 @@ func (_mr *_MockTransactionRecorder) Prepare(arg0 interface{}) *gomock.Call {
 
 func (_m *MockTransaction) Query(_param0 string, _param1 ...interface{}) (*sql.Rows, error) {
 	_s := []interface{}{_param0}
-	for _, _x := range _param1 {
-		_s = append(_s, _x)
-	}
+	_s = append(_s, _param1...)
+	
 	ret := _m.ctrl.Call(_m, "Query", _s...)
 	ret0, _ := ret[0].(*sql.Rows)
 	ret1, _ := ret[1].(error)
@@ -164,9 +159,8 @@ func (_mr *_MockTransactionRecorder) Query(arg0 interface{}, arg1 ...interface{}
 
 func (_m *MockTransaction) QueryRow(_param0 string, _param1 ...interface{}) *sql.Row {
 	_s := []interface{}{_param0}
-	for _, _x := range _param1 {
-		_s = append(_s, _x)
-	}
+	_s = append(_s, _param1...)
+	
 	ret := _m.ctrl.Call(_m, "QueryRow", _s...)
 	ret0, _ := ret[0].(*sql.Row)
 	return ret0

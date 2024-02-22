@@ -6,7 +6,7 @@ func Exec(db DB) error {
 
 	// uncaught error on cleanup, but we always
 	// want to cleanup
-	defer db.Exec("DROP TABLE example")
+	defer db.Exec("DROP TABLE example") //nolint
 
 	if err := Create(db); err != nil {
 		return err

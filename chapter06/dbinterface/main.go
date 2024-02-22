@@ -16,12 +16,20 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// this wont do anything if commit is successful
-	defer tx.Rollback()
+
+	// This won't do anything if commit is successful
+	//defer tx.Rollback() //nolint
+	defer func() {
+		err := tx.Rollback()
+		if err != nil {
+			panic(err)
+		}
+	}()
 
 	if err := dbinterface.Exec(tx); err != nil {
 		panic(err)
 	}
+
 	if err := tx.Commit(); err != nil {
 		panic(err)
 	}
