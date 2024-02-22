@@ -26,7 +26,10 @@ func main() {
 		}
 
 		// write the data to the connection
-		fmt.Fprintf(conn, data)
+		_, err = fmt.Fprint(conn, data)
+		if err != nil {
+			panic(err)
+		}
 
 		// read back the response
 		status, err := bufio.NewReader(conn).ReadString('\n')

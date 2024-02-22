@@ -1,7 +1,6 @@
 package oauthstore
 
 import (
-	"io/ioutil"
 	"os"
 	"reflect"
 	"testing"
@@ -12,7 +11,7 @@ import (
 )
 
 func TestFileStorage_GetToken(t *testing.T) {
-	fname, _ := ioutil.TempFile(".", "example")
+	fname, _ := os.CreateTemp(".", "example")
 	defer os.Remove(fname.Name())
 	tests := []struct {
 		name    string
@@ -37,7 +36,7 @@ func TestFileStorage_GetToken(t *testing.T) {
 }
 
 func TestFileStorage_SetToken(t *testing.T) {
-	fname, _ := ioutil.TempFile(".", "example")
+	fname, _ := os.CreateTemp(".", "example")
 	defer os.Remove(fname.Name())
 	type args struct {
 		t *oauth2.Token

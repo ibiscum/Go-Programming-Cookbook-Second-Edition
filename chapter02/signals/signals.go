@@ -32,7 +32,7 @@ func CatchSig(ch chan os.Signal, done chan bool) {
 
 func main() {
 	// initialize our channels
-	signals := make(chan os.Signal)
+	signals := make(chan os.Signal, 1)
 	done := make(chan bool)
 
 	// hook them up to the signals lib

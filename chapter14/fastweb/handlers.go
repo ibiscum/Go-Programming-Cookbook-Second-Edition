@@ -10,7 +10,10 @@ import (
 func GetItems(ctx *fasthttp.RequestCtx) {
 	enc := json.NewEncoder(ctx)
 	items := ReadItems()
-	enc.Encode(&items)
+	err := enc.Encode(&items)
+	if err != nil {
+		panic(err)
+	}
 	ctx.SetStatusCode(fasthttp.StatusOK)
 }
 

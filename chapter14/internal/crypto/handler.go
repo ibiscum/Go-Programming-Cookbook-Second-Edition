@@ -26,7 +26,10 @@ func GuessHandler(w http.ResponseWriter, r *http.Request) {
 
 	if err := bcrypt.CompareHashAndPassword(real, []byte(msg)); err != nil {
 		w.WriteHeader(http.StatusBadRequest)
-		w.Write([]byte("try again"))
+		_, err := w.Write([]byte("try again"))
+		if err != nil {
+			panic(err)
+		}
 		return
 	}
 
