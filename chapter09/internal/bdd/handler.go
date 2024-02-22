@@ -28,5 +28,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(fmt.Sprintf("BDD testing %s", req.Name)))
+	_, err := w.Write([]byte(fmt.Sprintf("BDD testing %s", req.Name)))
+	if err != nil {
+		panic(err)
+	}
 }

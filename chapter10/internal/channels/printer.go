@@ -11,7 +11,7 @@ import (
 // this will repeat forever until a context is
 // Done, i.e. timed out or cancelled
 func Printer(ctx context.Context, ch chan string) {
-	t := time.Tick(200 * time.Millisecond)
+	t := time.NewTicker(200 * time.Millisecond)
 	for {
 		select {
 		case <-ctx.Done():
@@ -19,7 +19,7 @@ func Printer(ctx context.Context, ch chan string) {
 			return
 		case res := <-ch:
 			fmt.Println(res)
-		case <-t:
+		case <-t.C:
 			fmt.Println("tock")
 		}
 	}

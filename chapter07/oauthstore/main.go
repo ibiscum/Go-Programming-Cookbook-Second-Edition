@@ -21,6 +21,7 @@ func main() {
 		},
 		Storage: &oauthstore.FileStorage{Path: "token.txt"},
 	}
+
 	ctx := context.Background()
 	token, err := oauthstore.GetToken(ctx, conf)
 	if err != nil {
@@ -33,5 +34,8 @@ func main() {
 		panic(err)
 	}
 	defer resp.Body.Close()
-	io.Copy(os.Stdout, resp.Body)
+	_, err = io.Copy(os.Stdout, resp.Body)
+	if err != nil {
+		panic(err)
+	}
 }

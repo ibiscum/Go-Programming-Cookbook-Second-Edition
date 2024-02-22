@@ -1,3 +1,4 @@
+// nolint
 package bdd
 
 import (
@@ -62,7 +63,8 @@ func theResponseBodyShouldBe(arg1 *gherkin.DataTable) error {
 }
 
 func FeatureContext(s *godog.TestSuite) {
-	//s.ScenarioInitializer(weCreateAHandlerRequestPayloadWith)
+
+	// s.ScenarioInitializer(weCreateAHandlerRequestPayloadWith)
 	// s.Step(`^we POST the HandlerRequest to \/hello$`, wePOSTTheHandlerRequestToHello)
 	// s.Step(`^the response code should be (\d+)$`, theResponseCodeShouldBe)
 	// s.Step(`^the response body should be:$`, theResponseBodyShouldBe)

@@ -18,6 +18,9 @@ func GetUser(client *http.Client) error {
 	}
 	defer resp.Body.Close()
 	fmt.Println("Status Code from", url, ":", resp.StatusCode)
-	io.Copy(os.Stdout, resp.Body)
+	_, err = io.Copy(os.Stdout, resp.Body)
+	if err != nil {
+		panic(err)
+	}
 	return nil
 }

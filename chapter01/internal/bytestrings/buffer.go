@@ -3,7 +3,6 @@ package bytestrings
 import (
 	"bytes"
 	"io"
-	"io/ioutil"
 )
 
 // Buffer demonstrates some tricks for initializing bytes Buffers
@@ -16,7 +15,10 @@ func Buffer(rawString string) *bytes.Buffer {
 	// there are a number of ways to create a buffer from the
 	// raw bytes or from the original string
 	var b = new(bytes.Buffer)
-	b.Write(rawBytes)
+	_, err := b.Write(rawBytes)
+	if err != nil {
+		panic(err)
+	}
 
 	// alternatively
 	// b = bytes.NewBuffer(rawBytes)
@@ -30,7 +32,7 @@ func Buffer(rawString string) *bytes.Buffer {
 // ToString is an example of taking an io.Reader and consuming
 // it all, then returning a string
 func toString(r io.Reader) (string, error) {
-	b, err := ioutil.ReadAll(r)
+	b, err := io.ReadAll(r)
 	if err != nil {
 		return "", err
 	}
