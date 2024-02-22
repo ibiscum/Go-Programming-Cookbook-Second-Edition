@@ -3,7 +3,7 @@ package confformat
 import (
 	"bytes"
 
-	"github.com/go-yaml/yaml"
+	"gopkg.in/yaml.v3"
 )
 
 // YAMLData is our common data struct

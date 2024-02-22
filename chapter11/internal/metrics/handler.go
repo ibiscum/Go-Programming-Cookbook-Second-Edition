@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	metrics "github.com/rcrowley/go-metrics"
+	"github.com/rcrowley/go-metrics"
 )
 
 // CounterHandler will update a counter each time it's called
