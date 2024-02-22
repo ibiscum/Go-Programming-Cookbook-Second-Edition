@@ -12,7 +12,7 @@ import (
 type Movie struct {
 	Title    string
 	Director string
-	Year     int
+	Year     uint32
 }
 
 // ReadCSV gives shows some examples of processing CSV
@@ -49,7 +49,7 @@ func ReadCSV(b io.Reader) ([]Movie, error) {
 			return nil, err
 		}
 
-		m := Movie{record[0], record[1], int(year)}
+		m := Movie{record[0], record[1], uint32(year)}
 		movies = append(movies, m)
 	}
 	return movies, nil
