@@ -1,5 +1,6 @@
 [![CodeQL](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/github-code-scanning/codeql)
 [![build](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/build.yml/badge.svg)](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/build.yml)
+[![lint](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/lint.yml/badge.svg)](https://github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/actions/workflows/lint.yml)
 
 # Go Programming Cookbook - Second Edition 
 
