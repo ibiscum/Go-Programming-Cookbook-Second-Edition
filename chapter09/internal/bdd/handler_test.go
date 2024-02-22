@@ -50,7 +50,10 @@ func theResponseCodeShouldBe(arg1 int) error {
 func theResponseBodyShouldBe(arg1 *gherkin.DataTable) error {
 	for c, row := range arg1.Rows {
 		b := bytes.Buffer{}
-		b.ReadFrom(resps[c].Body)
+		_, err := b.ReadFrom(resps[c].Body)
+		if err != nil {
+			panic(err)
+		}
 		if got, want := b.String(), row.Cells[0].Value; got != want {
 			return fmt.Errorf("got: %s; want %s", got, want)
 		}

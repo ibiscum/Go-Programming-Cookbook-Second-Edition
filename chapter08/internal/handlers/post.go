@@ -24,11 +24,15 @@ func GreetingHandler(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		return
 	}
+
 	var gr GreetingResponse
 	if err := r.ParseForm(); err != nil {
 		gr.Payload.Error = "bad request"
 		if payload, err := json.Marshal(gr); err == nil {
-			w.Write(payload)
+			_, err := w.Write(payload)
+			if err != nil {
+				panic(err)
+			}
 		}
 	}
 	name := r.FormValue("name")
@@ -39,7 +43,10 @@ func GreetingHandler(w http.ResponseWriter, r *http.Request) {
 	gr.Payload.Name = name
 	gr.Payload.Greeting = greeting
 	if payload, err := json.Marshal(gr); err == nil {
-		w.Write(payload)
+		_, err = w.Write(payload)
+		if err != nil {
+			panic(err)
+		}
 	} else if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 	}

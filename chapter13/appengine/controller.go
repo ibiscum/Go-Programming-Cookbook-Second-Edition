@@ -24,7 +24,11 @@ func (c *Controller) handle(w http.ResponseWriter, r *http.Request) {
 	ctx := context.Background()
 
 	// store the new message
-	r.ParseForm()
+	err := r.ParseForm()
+	if err != nil {
+		panic(err)
+	}
+
 	if message := r.FormValue("message"); message != "" {
 		if err := c.storeMessage(ctx, message); err != nil {
 			log.Printf("could not store message: %v", err)

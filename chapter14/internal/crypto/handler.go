@@ -12,7 +12,10 @@ func GuessHandler(w http.ResponseWriter, r *http.Request) {
 		// if we can't parse the form
 		// we'll assume it is malformed
 		w.WriteHeader(http.StatusBadRequest)
-		w.Write([]byte("error reading guess"))
+		_, err := w.Write([]byte("error reading guess"))
+		if err != nil {
+			panic(err)
+		}
 		return
 	}
 
@@ -28,6 +31,8 @@ func GuessHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("you got it"))
-	return
+	_, err := w.Write([]byte("you got it"))
+	if err != nil {
+		panic(err)
+	}
 }

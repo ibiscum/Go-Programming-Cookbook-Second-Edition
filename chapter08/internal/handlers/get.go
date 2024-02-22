@@ -16,5 +16,8 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(fmt.Sprintf("Hello %s!", name)))
+	_, err := w.Write([]byte(fmt.Sprintf("Hello %s!", name)))
+	if err != nil {
+		panic(err)
+	}
 }

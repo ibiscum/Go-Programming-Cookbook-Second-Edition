@@ -15,7 +15,6 @@ func (c *AtomicCounter) Add(amount int64) {
 
 // Read returns the current counter amount
 func (c *AtomicCounter) Read() int64 {
-	var result int64
-	result = atomic.LoadInt64(&c.value)
+	var result int64 = atomic.LoadInt64(&c.value)
 	return result
 }

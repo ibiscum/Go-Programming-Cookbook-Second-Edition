@@ -25,6 +25,9 @@ func VersionHandler(v *VersionInfo) http.HandlerFunc {
 			return
 		}
 		w.WriteHeader(http.StatusOK)
-		w.Write(vers)
+		_, err = w.Write(vers)
+		if err != nil {
+			panic(err)
+		}
 	}
 }

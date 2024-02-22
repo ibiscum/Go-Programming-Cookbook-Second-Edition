@@ -6,10 +6,11 @@ import (
 
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter07/internal/grpc/greeter"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
 )
 
 func main() {
-	conn, err := grpc.Dial(":4444", grpc.WithInsecure())
+	conn, err := grpc.Dial(":4444", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		panic(err)
 	}
