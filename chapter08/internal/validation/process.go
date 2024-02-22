@@ -28,7 +28,10 @@ func (c *Controller) Process(w http.ResponseWriter, r *http.Request) {
 		case Verror:
 			w.WriteHeader(http.StatusBadRequest)
 			// pass the Verror along
-			w.Write([]byte(err.Error()))
+			_, err := w.Write([]byte(err.Error()))
+			if err != nil {
+				panic(err)
+			}
 			return
 		default:
 			w.WriteHeader(http.StatusInternalServerError)

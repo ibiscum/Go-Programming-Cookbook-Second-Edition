@@ -6,8 +6,8 @@ import (
 
 	"github.com/apex/log"
 	"github.com/ibiscum/Go-Programming-Cookbook-Second-Edition/chapter08/internal/grpcjson/keyvalue"
-	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 // GetHandler wraps our RPC Get call
@@ -17,7 +17,7 @@ func (c *Controller) GetHandler(w http.ResponseWriter, r *http.Request) {
 
 	gresp, err := c.Get(r.Context(), &kv)
 	if err != nil {
-		if grpc.Code(err) == codes.NotFound {
+		if status.Code(err) == codes.NotFound {
 			w.WriteHeader(http.StatusNotFound)
 			return
 		}
@@ -33,5 +33,9 @@ func (c *Controller) GetHandler(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
-	w.Write(resp)
+
+	_, err = w.Write(resp)
+	if err != nil {
+		panic(err)
+	}
 }

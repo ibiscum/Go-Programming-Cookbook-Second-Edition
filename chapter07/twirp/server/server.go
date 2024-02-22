@@ -12,5 +12,8 @@ func main() {
 	twirpHandler := greeter.NewGreeterServiceServer(server, nil)
 
 	fmt.Println("Listening on port :4444")
-	http.ListenAndServe(":4444", twirpHandler)
+	err := http.ListenAndServe(":4444", twirpHandler)
+	if err != nil {
+		panic(err)
+	}
 }

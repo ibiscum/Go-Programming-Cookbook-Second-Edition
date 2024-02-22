@@ -8,7 +8,11 @@ import (
 // Handler grabs the get param ?next= and tries
 // to transition to the state contained there
 func Handler(w http.ResponseWriter, r *http.Request) {
-	r.ParseForm()
+	err := r.ParseForm()
+	if err != nil {
+		panic(err)
+	}
+
 	state := r.FormValue("next")
 	for address, raft := range rafts {
 		if address != raft.Leader() {

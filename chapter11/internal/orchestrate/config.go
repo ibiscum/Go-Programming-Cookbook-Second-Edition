@@ -15,13 +15,10 @@ func Setup(ctx context.Context, address string) (*mongo.Client, error) {
 	defer cancel()
 
 	fmt.Println(address)
-	client, err := mongo.NewClient(options.Client().ApplyURI(address))
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI(address))
 	if err != nil {
 		return nil, err
 	}
 
-	if err := client.Connect(ctx); err != nil {
-		return nil, err
-	}
 	return client, nil
 }

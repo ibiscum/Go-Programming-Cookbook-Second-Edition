@@ -39,5 +39,8 @@ func (c *Controller) SetHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.WriteHeader(http.StatusOK)
-	w.Write(resp)
+	_, err = w.Write(resp)
+	if err != nil {
+		panic(err)
+	}
 }

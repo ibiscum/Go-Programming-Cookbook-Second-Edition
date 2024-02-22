@@ -17,5 +17,8 @@ func main() {
 		panic(err)
 	}
 	fmt.Println("Listening on port :4444")
-	grpcServer.Serve(lis)
+	err = grpcServer.Serve(lis)
+	if err != nil {
+		panic(err)
+	}
 }

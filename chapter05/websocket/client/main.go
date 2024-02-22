@@ -17,7 +17,6 @@ func catchSig(ch chan os.Signal, c *websocket.Conn) {
 	if err != nil {
 		log.Println("write close:", err)
 	}
-	return
 }
 
 func main() {
