@@ -24,7 +24,10 @@ func TestOperate(t *testing.T) {
 }
 
 func TestOperateMkDir(t *testing.T) {
-	os.Mkdir("example_dir", os.FileMode(0755))
+	err := os.Mkdir("example_dir", os.FileMode(0755))
+	if err != nil {
+		panic(err)
+	}
 
 	tests := []struct {
 		name    string
