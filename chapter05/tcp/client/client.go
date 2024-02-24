@@ -12,7 +12,7 @@ const addr = "localhost:8888"
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 	for {
-		// grab a string input from the clie
+		// grab a string input from the client
 		fmt.Printf("Enter some text: ")
 		data, err := reader.ReadString('\n')
 		if err != nil {

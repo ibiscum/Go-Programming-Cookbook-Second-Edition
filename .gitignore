@@ -2,3 +2,7 @@
 tmp*
 mariadbdata
 .env
+cover.html
+cover.out
+cover.log
+.testcoverage_local.yml
