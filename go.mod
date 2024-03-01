@@ -8,7 +8,7 @@ require (
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/BurntSushi/toml v1.3.2
 	github.com/DATA-DOG/go-sqlmock v1.5.2
-	github.com/IBM/sarama v1.42.2
+	github.com/IBM/sarama v1.43.0
 	github.com/apex/log v1.9.0
 	github.com/aws/aws-lambda-go v1.46.0
 	github.com/buaazp/fasthttprouter v0.1.1
