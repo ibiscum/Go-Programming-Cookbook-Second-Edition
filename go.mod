@@ -32,7 +32,7 @@ require (
 	github.com/unrolled/render v1.6.1
 	github.com/valyala/fasthttp v1.52.0
 	go.mongodb.org/mongo-driver v1.14.0
-	golang.org/x/crypto v0.19.0
+	golang.org/x/crypto v0.20.0
 	golang.org/x/net v0.21.0
 	golang.org/x/oauth2 v0.17.0
 	google.golang.org/api v0.167.0
