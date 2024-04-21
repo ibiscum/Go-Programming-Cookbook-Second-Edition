@@ -33,7 +33,7 @@ require (
 	github.com/valyala/fasthttp v1.52.0
 	go.mongodb.org/mongo-driver v1.14.0
 	golang.org/x/crypto v0.22.0
-	golang.org/x/net v0.23.0
+	golang.org/x/net v0.24.0
 	golang.org/x/oauth2 v0.17.0
 	google.golang.org/api v0.167.0
 	google.golang.org/grpc v1.63.2
