@@ -8,7 +8,7 @@ require (
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/BurntSushi/toml v1.3.2
 	github.com/DATA-DOG/go-sqlmock v1.5.2
-	github.com/IBM/sarama v1.43.0
+	github.com/IBM/sarama v1.43.2
 	github.com/apex/log v1.9.0
 	github.com/aws/aws-lambda-go v1.46.0
 	github.com/buaazp/fasthttprouter v0.1.1
@@ -96,7 +96,7 @@ require (
 	github.com/jcmturner/rpc/v2 v2.0.3 // indirect
 	github.com/joho/godotenv v1.5.1
 	github.com/jtolds/gls v4.20.0+incompatible // indirect
-	github.com/klauspost/compress v1.17.7 // indirect
+	github.com/klauspost/compress v1.17.8 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
