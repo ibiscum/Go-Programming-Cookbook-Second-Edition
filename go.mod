@@ -14,7 +14,7 @@ require (
 	github.com/buaazp/fasthttprouter v0.1.1
 	github.com/cucumber/gherkin-go v5.2.0+incompatible
 	github.com/cucumber/godog v0.14.0
-	github.com/go-sql-driver/mysql v1.7.1
+	github.com/go-sql-driver/mysql v1.8.1
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.4
 	github.com/gorilla/websocket v1.5.1
@@ -41,6 +41,8 @@ require (
 	gopkg.in/redis.v5 v5.2.9
 	gopkg.in/yaml.v3 v3.0.1
 )
+
+require filippo.io/edwards25519 v1.1.0 // indirect
 
 require (
 	cloud.google.com/go/auth v0.3.0 // indirect
