@@ -3,7 +3,7 @@ module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition
 go 1.20
 
 require (
-	cloud.google.com/go/datastore v1.15.0
+	cloud.google.com/go/datastore v1.17.0
 	cloud.google.com/go/firestore v1.15.0
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/BurntSushi/toml v1.3.2
@@ -53,7 +53,7 @@ require (
 	cloud.google.com/go v0.113.0 // indirect
 	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	cloud.google.com/go/iam v1.1.7 // indirect
-	cloud.google.com/go/longrunning v0.5.6 // indirect
+	cloud.google.com/go/longrunning v0.5.7 // indirect
 	cloud.google.com/go/storage v1.40.0 // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect
