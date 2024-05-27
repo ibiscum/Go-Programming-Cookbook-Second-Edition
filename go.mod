@@ -30,7 +30,7 @@ require (
 	github.com/trustmaster/goflow v0.0.0-20210928125717-b7d4fd465ab2
 	github.com/twitchtv/twirp v8.1.3+incompatible
 	github.com/unrolled/render v1.6.1
-	github.com/valyala/fasthttp v1.53.0
+	github.com/valyala/fasthttp v1.54.0
 	go.mongodb.org/mongo-driver v1.15.0
 	golang.org/x/crypto v0.23.0
 	golang.org/x/net v0.25.0
