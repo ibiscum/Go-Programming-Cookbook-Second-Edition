@@ -19,7 +19,6 @@ func main() {
 			defer wg.Done()
 			m.Set(fmt.Sprint(i), "success")
 			o.Increment()
-
 		}(i)
 	}
 
