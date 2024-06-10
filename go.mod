@@ -34,7 +34,7 @@ require (
 	go.mongodb.org/mongo-driver v1.15.0
 	golang.org/x/crypto v0.23.0
 	golang.org/x/net v0.25.0
-	golang.org/x/oauth2 v0.20.0
+	golang.org/x/oauth2 v0.21.0
 	google.golang.org/api v0.182.0
 	google.golang.org/grpc v1.64.0
 	google.golang.org/protobuf v1.34.1
