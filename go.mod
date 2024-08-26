@@ -8,7 +8,7 @@ require (
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/BurntSushi/toml v1.4.0
 	github.com/DATA-DOG/go-sqlmock v1.5.2
-	github.com/IBM/sarama v1.43.2
+	github.com/IBM/sarama v1.43.3
 	github.com/apex/log v1.9.0
 	github.com/aws/aws-lambda-go v1.47.0
 	github.com/buaazp/fasthttprouter v0.1.1
@@ -64,7 +64,7 @@ require (
 	github.com/cucumber/gherkin/go/v26 v26.2.0 // indirect
 	github.com/cucumber/messages/go/v21 v21.0.1 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
-	github.com/eapache/go-resiliency v1.6.0 // indirect
+	github.com/eapache/go-resiliency v1.7.0 // indirect
 	github.com/eapache/go-xerial-snappy v0.0.0-20230731223053-c322873962e3 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
 	github.com/fatih/color v1.16.0 // indirect
