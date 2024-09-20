@@ -17,22 +17,22 @@ func main() {
 	defer c.Close()
 
 	if err := c.Set(ctx, "key", []string{"val1", "val2"}); err != nil {
-		log.Fatalf(err.Error())
+		log.Fatal(err.Error())
 	}
 
 	res, err := c.Get(ctx, "key")
 	if err != nil {
-		log.Fatalf(err.Error())
+		log.Fatal(err.Error())
 	}
 	fmt.Println(res)
 
 	if err := c.Set(ctx, "key2", []string{"val3", "val4"}); err != nil {
-		log.Fatalf(err.Error())
+		log.Fatal(err.Error())
 	}
 
 	res, err = c.Get(ctx, "key2")
 	if err != nil {
-		log.Fatalf(err.Error())
+		log.Fatal(err.Error())
 	}
 	fmt.Println(res)
 }
