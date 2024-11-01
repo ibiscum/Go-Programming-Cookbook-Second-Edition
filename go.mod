@@ -36,7 +36,7 @@ require (
 	golang.org/x/oauth2 v0.23.0
 	google.golang.org/api v0.199.0
 	google.golang.org/grpc v1.67.0
-	google.golang.org/protobuf v1.34.2
+	google.golang.org/protobuf v1.35.1
 	gopkg.in/redis.v5 v5.2.9
 	gopkg.in/yaml.v3 v3.0.1
 )
