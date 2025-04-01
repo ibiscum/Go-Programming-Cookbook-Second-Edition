@@ -1,6 +1,7 @@
 module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition
 
 go 1.23.2
+toolchain go1.24.1
 
 require (
 	cloud.google.com/go/datastore v1.20.0
@@ -32,8 +33,8 @@ require (
 	github.com/unrolled/render v1.7.0
 	github.com/valyala/fasthttp v1.58.0
 	go.mongodb.org/mongo-driver v1.17.1
-	golang.org/x/crypto v0.32.0
-	golang.org/x/net v0.34.0
+	golang.org/x/crypto v0.36.0
+	golang.org/x/net v0.38.0
 	golang.org/x/oauth2 v0.24.0
 	google.golang.org/api v0.214.0
 	google.golang.org/grpc v1.69.2
@@ -123,9 +124,9 @@ require (
 	go.opentelemetry.io/otel/metric v1.33.0 // indirect
 	go.opentelemetry.io/otel/trace v1.33.0 // indirect
 	golang.org/x/exp v0.0.0-20241217172543-b2144cdd0a67 // indirect
-	golang.org/x/sync v0.10.0 // indirect
-	golang.org/x/sys v0.29.0 // indirect
-	golang.org/x/text v0.21.0
+	golang.org/x/sync v0.12.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/text v0.23.0
 	golang.org/x/time v0.8.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20241219192143-6b3ec007d9bb // indirect
