@@ -1,7 +1,6 @@
 module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition
 
 go 1.23.2
-
 require (
 	cloud.google.com/go/datastore v1.20.0
 	cloud.google.com/go/firestore v1.17.0
@@ -37,7 +36,7 @@ require (
 	golang.org/x/oauth2 v0.24.0
 	google.golang.org/api v0.214.0
 	google.golang.org/grpc v1.69.2
-	google.golang.org/protobuf v1.36.0
+	google.golang.org/protobuf v1.36.6
 	gopkg.in/redis.v5 v5.2.9
 	gopkg.in/yaml.v3 v3.0.1
 )
