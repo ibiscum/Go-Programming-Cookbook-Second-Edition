@@ -1,7 +1,6 @@
 module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition
 
 go 1.23.2
-
 require (
 	cloud.google.com/go/datastore v1.20.0
 	cloud.google.com/go/firestore v1.17.0
@@ -14,7 +13,7 @@ require (
 	github.com/buaazp/fasthttprouter v0.1.1
 	github.com/cucumber/gherkin-go v5.2.0+incompatible
 	github.com/cucumber/godog v0.15.0
-	github.com/go-sql-driver/mysql v1.8.1
+	github.com/go-sql-driver/mysql v1.9.1
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.4
 	github.com/gorilla/websocket v1.5.3
