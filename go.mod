@@ -14,7 +14,7 @@ require (
 	github.com/buaazp/fasthttprouter v0.1.1
 	github.com/cucumber/gherkin-go v5.2.0+incompatible
 	github.com/cucumber/godog v0.15.0
-	github.com/go-sql-driver/mysql v1.8.1
+	github.com/go-sql-driver/mysql v1.9.2
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.4
 	github.com/gorilla/websocket v1.5.3
