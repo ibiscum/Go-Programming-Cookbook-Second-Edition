@@ -32,17 +32,17 @@ require (
 	github.com/unrolled/render v1.7.0
 	github.com/valyala/fasthttp v1.58.0
 	go.mongodb.org/mongo-driver v1.17.3
-	golang.org/x/crypto v0.32.0
-	golang.org/x/net v0.34.0
-	golang.org/x/oauth2 v0.24.0
+	golang.org/x/crypto v0.46.0
+	golang.org/x/net v0.48.0
+	golang.org/x/oauth2 v0.34.0
 	google.golang.org/api v0.214.0
-	google.golang.org/grpc v1.69.2
-	google.golang.org/protobuf v1.36.6
+	google.golang.org/grpc v1.79.3
+	google.golang.org/protobuf v1.36.10
 	gopkg.in/redis.v5 v5.2.9
 	gopkg.in/yaml.v3 v3.0.1
 )
 
-require filippo.io/edwards25519 v1.1.0 // indirect
+require filippo.io/edwards25519 v1.1.1 // indirect
 
 require (
 	cloud.google.com/go/auth v0.13.0 // indirect
@@ -63,7 +63,7 @@ require (
 
 require (
 	cloud.google.com/go v0.117.0 // indirect
-	cloud.google.com/go/compute/metadata v0.6.0 // indirect
+	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	cloud.google.com/go/iam v1.3.0 // indirect
 	cloud.google.com/go/longrunning v0.6.3 // indirect
 	github.com/andybalholm/brotli v1.1.1 // indirect
@@ -124,12 +124,12 @@ require (
 	go.opentelemetry.io/otel/metric v1.43.0 // indirect
 	go.opentelemetry.io/otel/trace v1.43.0 // indirect
 	golang.org/x/exp v0.0.0-20241217172543-b2144cdd0a67 // indirect
-	golang.org/x/sync v0.13.0 // indirect
+	golang.org/x/sync v0.19.0 // indirect
 	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.24.0
+	golang.org/x/text v0.32.0
 	golang.org/x/time v0.8.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20241219192143-6b3ec007d9bb // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20241219192143-6b3ec007d9bb // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20241219192143-6b3ec007d9bb // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20251202230838-ff82c1b0f217 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251202230838-ff82c1b0f217 // indirect
 )
