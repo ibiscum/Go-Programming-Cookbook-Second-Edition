@@ -3,7 +3,7 @@ module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition
 go 1.25.9
 
 require (
-	cloud.google.com/go/datastore v1.22.0
+	cloud.google.com/go/datastore v1.23.0
 	cloud.google.com/go/firestore v1.22.0
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/BurntSushi/toml v1.6.0
