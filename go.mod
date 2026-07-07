@@ -3,7 +3,7 @@ module github.com/ibiscum/Go-Programming-Cookbook-Second-Edition
 go 1.26
 
 require (
-	cloud.google.com/go/datastore v1.23.0
+	cloud.google.com/go/datastore v1.24.0
 	cloud.google.com/go/firestore v1.22.0
 	firebase.google.com/go v3.13.0+incompatible
 	github.com/BurntSushi/toml v1.6.0
@@ -79,7 +79,7 @@ require (
 	cloud.google.com/go v0.123.0 // indirect
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	cloud.google.com/go/iam v1.9.0 // indirect
-	cloud.google.com/go/longrunning v0.11.0 // indirect
+	cloud.google.com/go/longrunning v1.0.0 // indirect
 	github.com/andybalholm/brotli v1.2.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
@@ -141,6 +141,6 @@ require (
 	golang.org/x/time v0.15.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20260420184626-e10c466a9529 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20260420184626-e10c466a9529 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20260511170946-3700d4141b60 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260523011958-0a33c5d7ca68 // indirect
 )
