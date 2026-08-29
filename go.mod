@@ -30,7 +30,7 @@ require (
 	github.com/trustmaster/goflow v0.0.0-20210928125717-b7d4fd465ab2
 	github.com/twitchtv/twirp v8.1.3+incompatible
 	github.com/unrolled/render v1.7.0
-	github.com/valyala/fasthttp v1.70.0
+	github.com/valyala/fasthttp v1.73.0
 	go.mongodb.org/mongo-driver v1.17.9
 	golang.org/x/crypto v0.55.0
 	golang.org/x/net v0.58.0
@@ -80,7 +80,7 @@ require (
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	cloud.google.com/go/iam v1.9.0 // indirect
 	cloud.google.com/go/longrunning v1.0.0 // indirect
-	github.com/andybalholm/brotli v1.2.1 // indirect
+	github.com/andybalholm/brotli v1.2.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
